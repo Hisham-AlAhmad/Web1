@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo-darkHA.png" id="HA" onclick="changeLogo()" alt="" width="100px" />
+          </a>
+        </div>
+        <nav>
+          <ul class="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <lord-icon src="https://cdn.lordicon.com/hyhnpiza.json" trigger="hover" colors="primary:#121331"
+            state="hover">
+          </lord-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Account Page -->
+
+  <div class="account-page">
+    <div class="container">
+      <div class="user">
+        <p><b>New or old user:</b></p>
+        <input type="radio" name="acc" onclick="signinOrLogin()" value="Sign in">Sign in
+        &nbsp;
+        <input type="radio" name="acc" onclick="signinOrLogin()" value="Log in" checked>Log in
+      </div>
+      <br><br><br>
+      <div class="row">
+        <div class="form-container">
+          <div class="form-btn">
+            <span id="result">Login</span>
+          </div>
+          <form>
+            <input type="text" placeholder="Username" />
+            <input type="password" placeholder="Password" />
+            <button type="submit" class="btn" id="subtn">Login</button>
+            <div class="remember-me">
+              <input class="boxx" type="checkbox" unchecked>Remember me
+            </div>
+            <input type="reset" value="Clear" class="clear">
+            <br> <br>
+            <a href="#" onclick="changeToSignin()">Not Registered Yet ?</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>
+            Download App for Android <br />
+            and ios mobile phone
+          </p>
+          <div class="app-logo">
+            <a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact" target="_blank">
+              <img src="images/play-store.png">
+            </a>
+            <a href="https://apps.apple.com/us/app/genshin-impact/id1517783697" target="_blank">
+              <img src="images/app-store.png">
+            </a>
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-whiteHA.png" id="HA2" onclick="changeLogo()" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit.
+            Porro, eum?
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">&copy; Copyright 2023 - HA</p>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Cart</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <img src="images/logo-darkHA.png" id="HA" onclick="changeLogo()" width="100px" />
+        </a>
+      </div>
+      <nav>
+        <ul class="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+
+        </ul>
+      </nav>
+      <a href="cart.html">
+        <lord-icon src="https://cdn.lordicon.com/hyhnpiza.json" trigger="hover" colors="primary:#121331" state="hover">
+        </lord-icon>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="small-container cart-page">
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/game1.jpg" id="imgG">
+            <div>
+              <p>Game</p>
+              <small>Price: $60</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+            <div>
+              &nbsp;&nbsp;&nbsp;
+              <select id="" onchange="getGame(this.value)">
+                <option value="game1">game 1</option>
+                <option value="game2">game 2</option>
+                <option value="game3">game 3</option>
+                <option value="game4">game 4</option>
+                <option value="game5">game 5</option>
+                <option value="game6">game 6</option>
+                <option value="game7">game 7</option>
+                <option value="game8">game 8</option>
+                <option value="game9">game 9</option>
+                <option value="game10">game 10</option>
+              </select>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" onchange="updateSubtotal(this)"></td>
+        <td id="subtotal1">$60</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/laptop1.jpg" id="imgL">
+            <div>
+              <p>Laptop</p>
+              <small>Price: $800</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+            <div>
+              &nbsp;&nbsp;&nbsp;
+              <select id="" onchange="getLaptop(this.value)">
+                <option value="laptop1">laptop 1</option>
+                <option value="laptop2">laptop 2</option>
+                <option value="laptop3">laptop 3</option>
+                <option value="laptop4">laptop 4</option>
+                <option value="laptop5">laptop 5</option>
+                <option value="laptop6">laptop 6</option>
+                <option value="laptop7">laptop 7</option>
+                <option value="laptop8">laptop 8</option>
+                <option value="laptop9">laptop 9</option>
+                <option value="laptop10">laptop 10</option>
+              </select>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" onchange="updateSubtotal(this)"></td>
+        <td id="subtotal2">$800</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/keyboard1.jpg" id="imgK">
+            <div>
+              <p>Keyboard</p>
+              <small>Price: $50</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+            <div>
+              &nbsp;&nbsp;&nbsp;
+              <select id="" onchange="getKeyboard(this.value)">
+                <option value="keyboard1">keyboard 1</option>
+                <option value="keyboard2">keyboard 2</option>
+                <option value="keyboard3">keyboard 3</option>
+                <option value="keyboard4">keyboard 4</option>
+                <option value="keyboard5">keyboard 5</option>
+                <option value="keyboard6">keyboard 6</option>
+                <option value="keyboard7">keyboard 7</option>
+                <option value="keyboard8">keyboard 8</option>
+                <option value="keyboard9">keyboard 9</option>
+                <option value="keyboard10">keyboard 10</option>
+              </select>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" onchange="updateSubtotal(this)"></td>
+        <td id="subtotal3">$50</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/mouse1.jpg" id="imgM">
+            <div>
+              <p>Mouse</p>
+              <small>Price: $25</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+            <div>
+              &nbsp;&nbsp;&nbsp;
+              <select id="" onchange="getMouse(this.value)">
+                <option value="mouse1">mouse 1</option>
+                <option value="mouse2">mouse 2</option>
+                <option value="mouse3">mouse 3</option>
+                <option value="mouse4">mouse 4</option>
+                <option value="mouse5">mouse 5</option>
+                <option value="mouse6">mouse 6</option>
+                <option value="mouse7">mouse 7</option>
+                <option value="mouse8">mouse 8</option>
+                <option value="mouse9">mouse 9</option>
+                <option value="mouse10">mouse 10</option>
+              </select>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" onchange="updateSubtotal(this)"></td>
+        <td id="subtotal3">$25</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/controller1.jpg" id="imgC">
+            <div>
+              <p>Controller</p>
+              <small>Price: $45</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+            <div>
+              &nbsp;&nbsp;&nbsp;
+              <select id="" onchange="getController(this.value)">
+                <option value="controller1">controller 1</option>
+                <option value="controller2">controller 2</option>
+                <option value="controller3">controller 3</option>
+                <option value="controller4">controller 4</option>
+                <option value="controller5">controller 5</option>
+                <option value="controller6">controller 6</option>
+                <option value="controller7">controller 7</option>
+                <option value="controller8">controller 8</option>
+                <option value="controller9">controller 9</option>
+                <option value="controller10">controller 10</option>
+              </select>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" onchange="updateSubtotal(this)"></td>
+        <td id="subtotal3">$45</td>
+      </tr>
+    </table>
+
+    <div class="total-price">
+      <table>
+
+        <tr>
+          <td>Total</td>
+          <td id="total">$980</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>
+            Download App for Android <br />
+            and ios mobile phone
+          </p>
+          <div class="app-logo">
+            <a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact" target="_blank">
+              <img src="images/play-store.png">
+            </a>
+            <a href="https://apps.apple.com/us/app/genshin-impact/id1517783697" target="_blank">
+              <img src="images/app-store.png">
+            </a>
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-whiteHA.png" id="HA2" onclick="changeLogo()" alt="" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit.
+            Porro, eum?
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">&copy; Copyright 2023 - HA</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

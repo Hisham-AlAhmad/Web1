@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <img src="images/logo-darkHA.png" id="HA" onclick="changeLogo()" alt="" width="100px" />
+        </a>
+      </div>
+      <nav>
+        <ul class="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html">
+        <lord-icon src="https://cdn.lordicon.com/hyhnpiza.json" trigger="hover" colors="primary:#121331" state="hover">
+        </lord-icon>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="small-container">
+    <div class="row">
+      <div class="row left">
+        <h2 class="">Category: &nbsp;&nbsp;</h2>
+        <select name="Category" id="categorySelect" onchange="updateProductInformation(this.value)">
+          <option value="-1">Default Sorting</option>
+          <option value="games">Games</option>
+          <option value="laptops">Laptops</option>
+          <option value="keyboards">Keyboards</option>
+          <option value="gamingMice">Gaming mice</option>
+          <option value="controllers">Contorllers</option>
+        </select>
+      </div>
+
+      <div class="row right">
+        <h2>Sort by: &nbsp;&nbsp;</h2>
+        <select name="Sort" id="">
+          <option value="-1">Default Sorting</option>
+          <option value="Price">Price</option>
+          <option value="Rating">Rating</option>
+        </select>
+      </div>
+    </div>
+
+    <br><br><br>
+    <div class="container-fluid">
+      <div id="productContainer">
+      <div class="row">
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+          <div class=" product">
+            <img src="images/game1.jpg" />
+            <h4 class="name">Elden Ring</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <p class="price">$60</p>
+            <p class="category">games</p>
+          </div>
+        </div>
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="product">
+            <img src="images/laptop5.jpg" />
+            <h4 class="name">Laptop</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="price">$650</p>
+            <p class="category">laptops</p>
+          </div>
+        </div>
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="product">
+            <img src="images/keyboard1.jpg" />
+            <h4 class="name">Keyboard</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p class="price">$55</p>
+            <p class="category">keyboard</p>
+          </div>
+        </div>
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="product">
+            <img src="images/mouse6.jpg" />
+            <h4 class="name">Mouse</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p class="price">$40</p>
+            <p class="category">gaming mice</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="product">
+            <img src="images/controller1.jpg" />
+            <h4 class="name">Contorller</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p class="price">$50</p>
+            <p class="category">contorller</p>
+          </div>
+        </div>
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="product">
+            <img src="images/game2.jpg" />
+            <h4 class="name">Genshin Impact</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p class="price">$60</p>
+            <p class="category">games</p>
+          </div>
+        </div>
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="product">
+            <img src="images/laptop7.jpg" />
+            <h4 class="name">Laptop</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <p class="price">$900</p>
+            <p class="category">laptops</p>
+          </div>
+        </div>
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="product">
+            <img src="images/keyboard8.jpg" />
+            <h4 class="name">Keyboard</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p class="price">$45</p>
+            <p class="category">keyboard</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="product">
+            <img src="images/mouse10.jpg" />
+            <h4 class="name">Mouse</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p class="price">$25</p>
+            <p class="category">gaming mice</p>
+          </div>
+        </div>
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="product">
+            <img src="images/controller5.jpg" />
+            <h4 class="name">Contorller</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p class="price">$70</p>
+            <p class="category">controllers</p>
+          </div>
+        </div>
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="product">
+            <img src="images/game7.jpg" />
+            <h4 class="name">Demon Slayer </h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p class="price">$60</p>
+            <p class="category">games</p>
+          </div>
+        </div>
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="product">
+            <img src="images/laptop8.jpg" />
+            <h4 class="name">Laptop</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <p class="price">$800</p>
+            <p class="category">laptop</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+
+    <div class="page-btn">
+      <span id="games" onclick="updateProductInformation(this.id)">1</span>
+      <span id="laptops" onclick="updateProductInformation(this.id)">2</span>
+      <span id="keyboards" onclick="updateProductInformation(this.id)">3</span>
+      <span id="controllers" onclick="updateProductInformation(this.id)">4</span>
+      <span>&#8594;</span>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>
+            Download App for Android <br />
+            and ios mobile phone
+          </p>
+          <div class="app-logo">
+            <a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact" target="_blank">
+              <img src="images/play-store.png">
+            </a>
+            <a href="https://apps.apple.com/us/app/genshin-impact/id1517783697" target="_blank">
+              <img src="images/app-store.png">
+            </a>
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-whiteHA.png" id="HA2" onclick="changeLogo()" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit.
+            Porro, eum?
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">&copy; Copyright 2023 - HA</p>
+    </div>
+  </div>
+</body>
+
+</html>
